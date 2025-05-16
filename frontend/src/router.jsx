@@ -1,13 +1,21 @@
 import { createBrowserRouter } from "react-router-dom"
 import App from "./App"
+import Dashboard from "./pages/Dashboard"
+import RootLayout from "./pages/RootLayout"
+import GerarSenha from "./pages/GerarSenha"
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <RootLayout />,
         children: [{
             index: true,
-            element: <App />
+            element: <GerarSenha />
+        }, {
+            path: "dashboard",
+            element: <Dashboard />
         }]
     }
 ])
+
+export default router

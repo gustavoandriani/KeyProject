@@ -29,6 +29,20 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: #9b2a88;
+  background: linear-gradient(90deg, rgba(155, 42, 136, 1) 0%, rgba(87, 193, 199, 1) 50%, rgba(86, 237, 83, 1) 100%);
+}
+
+nav {
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 0.6rem;
+}
+nav h1 {
+  font-size: 1.5em;
 }
 
 h1 {
@@ -64,6 +78,10 @@ div.container {
 
 div.containerButtons button{
   margin: 0 10px;
+  background: #9B2A88;
+}
+div.containerButtons button:hover {
+  background: #d741be;
 }
 @media (prefers-color-scheme: light) {
   :root {
