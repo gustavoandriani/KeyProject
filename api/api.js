@@ -3,6 +3,7 @@ import express from "express"
 const app = express() // Utiliza a função express
 const PORT = 3000 // Porta de saída e entrada do servidor
 
+
 const Carro = { marca: "Chevrolet", modelo: "Prisma", ano: 2007, cor: "Prata"}
 
 app.get("/", (req, res) => { // App.get (MÉTODO GET) normalmente requisições pelo navegador
@@ -14,3 +15,8 @@ app.listen(PORT, () => console.log(`Servidor iniciado na porta ${PORT}`)) // App
 
 // vai colocar na mao? os role, dps tem q criar uma pagina p add produto
 // Tou com um papel que escrevi um rascunho do projeto, qnd eu chegar em casa, digitalizo e te mando.
+// suave carai ta safe, vai fazer em qual language? full js? o back
+// Yes, node com express e mysql
+// como q eu rodo essa prr no meu? kkkkkkkkkkkkkkkkkkkkkkkkkkkk
+// node --watch api.js
+

@@ -25,6 +25,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  justify-content: center;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -54,6 +55,16 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.containerButtons button{
+  margin: 0 10px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
